@@ -39,7 +39,7 @@ def main():
     app.add_handler(CommandHandler("reboot", reboot))
     app.add_handler(CommandHandler("update", autoupdate))
 
-    logging.info("Bot avviato.")
+    logging.info("Bot avviato")
     app.run_polling()
 
 if __name__ == "__main__":
