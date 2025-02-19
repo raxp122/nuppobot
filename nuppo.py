@@ -26,7 +26,7 @@ async def reboot(update: Update, context: CallbackContext):
 async def autoupdate(update: Update, context: CallbackContext):
     if update.message.from_user.username == config.AUTHORIZED_USER:
         await update.message.reply_text("Aggiorno il Bot")
-        os.system("update_nuppo")
+        os.system("nohup update_nuppo &")
     else:
         await update.message.reply_text("Non sei autorizzato ad aggiornare il Nuppo.")
 
